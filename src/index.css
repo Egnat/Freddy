@@ -1,4 +1,4 @@
-body {
+/*body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,335 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}*/
+
+/*@/*@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');*
+
+::-webkit-scrollbar {
+width:.1px;
+height:5px;
+pacity:.02
 }
+
+::-webkit-scrollbar-button {
+height:50px;
+background:#42e10e
+}
+
+::-webkit-scrollbar-track {
+background:#274dd7
+}
+
+::-webkit-scrollbar-track-piece {
+background:#e91e63
+}
+
+::-webkit-scrollbar-thumb {
+background:#fbe100;
+border-radius:10px;
+-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3)
+}
+
+html {
+min-width:1280px;/**
+}
+
+body {
+margin:0;
+padding:0;
+font-family:'Alice';
+font-size:18px;
+background-color:#000;
+ackground-image:url(https://img.freepik.com/premium-photo/abstract-white-wave-background-3d-illustration_37416-429.jpg?size=626&ext=jpg&uid=R85390089&ga=GA1.2.882655275.1677006820&semt=sph);/*../public/images/abstractfirebloom.png*
+webkit-filter:blur(135px);
+ackground-size:cover;
+ackground-repeat:no-repeat;
+ackground-attachment:fixed;/*для фото не пойдёт, при еменьшении экрана режет фото*
+ox-shadow:inset 1280px 844px rgb(9 16 255 / 0%)
+}
+
+* {
+box-sizing:border-box
+}
+
+section {margin-top: 140px;}
+
+.header {}
+
+.header-continer {
+  width: 1280p;
+  height: 881p;
+}
+
+.header-continer_content {
+  display: flex;
+  justify-content: center;
+  width: 1280p;
+  height: 881p; 
+}
+
+.filter-img_freddy {
+  display: flex;
+  width: 881px;
+  height: 881px;
+  margin: 0;
+  ackground-image: /*linear-gradient(45deg, #f8a261, #6e9fc9),*//*url(/public/images/Freddy.jpg);
+  background-position: center;
+  ackground-blend-mode: overlay, color;
+  box-shadow:inset 881px 876px rgb(9 16 255 / 21%);/*настраивает цвет тонировки фото где нужно, сверху, снизу и по бокам*
+ ilter: drop-shadow(705px 0 0 #ccc); /*рядом с фото делает ппрям-к серого цвета, в данном случае*
+ackground: linear-gradient(180.12deg,#5883fd 46%,#FFC700 9%);/*настраивает цвет боди где нужно, сверху, снизу и по бокам. background: linear-gradient и background-image не совместимы*
+}
+
+.img-freddy {
+  width: 881px;
+  height: 881px;
+  ackground: linear-gradient(269.67deg, rgba(0, 0, 0, 0.85) -5.74%, rgba(0, 0, 0, 0) 96.99%);
+  ox-shadow:inset 881px 876px rgb(9 16 255 / 21%);/*настраивает цвет боди где нужно, сверху, снизу и по бокам*
+  ackground: linear-gradient(180.12deg,#5883fd 46%,#FFC700 9%);
+}
+
+/*Можно скопировать с фигмы фото уже с тенью, но для этого фото нужно обернуть во фрейм, чтобы скопировалась фотка
+как в фигме со всеми эффектаи или копировать просто фотку и если нужно затемнение, добавить
+див - черный пр-к, как здесь и прописывать ему нужную позицию, чтобы фото выглядело как в фигме*
+
+.shadow {
+  width: 349px;
+  height: 881px;
+  background-color: #00000087;
+  margin-left: -358px;
+  filter: blur(140px);
+  ilter: drop-shadow(-159px 0px 16px rgb(0 0 0 / 45%));/*black color*
+  transform:matrix(-1,0,0,1,0,0);
+}
+
+.common {
+  display: flex; 
+  flex-direction: column;
+  margin: 96px 0px 0px -289px;
+  gap: 47px;
+}
+
+.block-header_text {
+  display: flex;
+  flex-direction: column;
+  width: 697px;
+  gap: 65px;
+  z-index: 1;
+}
+
+.title {
+width: 664px;
+margin: 0;
+font-family: 'Alice';
+font-style: normal;
+font-weight: 400;
+font-size: 77px;
+line-height: 91px;
+color: #FFFFFF;
+}
+
+.filterImgDrops {
+  display: flex;
+  width: 97px;
+  height: 206px;
+  padding-left: 524px;
+  margin: 0;
+  ackground-image: url(../public/images/drops.jpg);
+}
+
+.drop-1 {
+  width: 26px;
+  height: 69px;
+  margin-top: 47px;
+  margin-right: 27px;
+}
+
+.dropsTwoTree {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.drop-2 {
+  width: 26px;
+  height: 69px;
+}
+
+.filterImgFreddy-2 {
+  width: 335p;
+  height: 335p;
+  padding-left: 329px;
+}
+
+.imgFreddy-2 {
+ width: 300px;
+ height: 300px;
+ border-radius: 73px; 
+}
+
+firstScreen {/*полная фотка с текстом первого экрана с фигмы*
+  width: 1280px;
+  height: 881px;
+}
+
+.screenTwo {
+ width: 1280p;
+  height: 1786px1800px;
+  argin: 0;
+  margin-top: -1968p;
+  background-image: url(../public/images/run-from-kruger.jpg);/*run-from-kruger1.jpg*
+  background-size: cover;
+  webkit-filter: grayscale(50%) contrast(150%) opacity(0.4) brightness(0.7); /*эффекты можно комбинировать тонируется все содержимое футера, z-index не помогает для растанировки *
+ ox-shadow: inset 1280px 844px rgba(0 0 0 / 70%);
+ackdrop-filter: blur(7px);
+}
+
+.blur {
+  width: 1280p;
+  height: 1800px;
+  margin-top: -1910px;
+  webkit-filter: grayscale(50%) contrast(150%) opacity(0.4) brightness(0.7) blur(50px); /*-webkit-эффекты можно комбинировать тонируется все содержимое футера, z-index не помогает для растанировки *
+ox-shadow: inset 1280px 844px rgba(0 0 0 / 70%);
+ilter: drop-shadow(-159px 0px 16px rgb(0 0 0 / 45%));/*black color*
+backdrop-filter: brightness(0.5) grayscale(25%) contrast(2);/*отлично сделал эффекты фото бэкграунду*
+ackground: linear-gradient(180.12deg,#5883fd 46%,#FFC700 9%); 
+}
+
+continerBackground {
+  width: 1280p;
+  height: 1786px;
+  -webkit-filter: grayscale(50%) contrast(150%) opacity(0.4) brightness(0.7); /*-webkit-эффекты можно комбинировать тонируется все содержимое футера, z-index не помогает для растанировки *
+  /*filter:grayscale(80%); filter: brightness(1.0);*
+  ackground: linear-gradient(180.12deg,#5883fd 46%,#FFC700 9%); 
+}
+
+.continer-screenTwo, .footerContiner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.screenTwo-continerContent {
+ display: flex;
+ flex-direction: column;
+ gap: 100px;
+}
+
+.subtitle {
+  margin: 0;
+  font-family: 'Alice';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 57px;
+  text-align: center;
+  color: #FF0000;
+  z-index: 1;
+}
+
+.firstParagraph, .twoParagraph {
+  display: flex;
+  justify-content: space-between;
+  lign-items: center;
+  z-index: 1;
+}
+
+.freddyTree {
+  width: 370px;
+  height: 326px;
+  margin-right: 18px;
+  rder: 2;/* меняет местами элементы. на пример, фото находится левее текста, прописываю фото ордер и оно становится справа от текста *
+}
+
+.freddyFour {
+  width: 370px;
+  height: 326px;
+  margin-right: -20px;
+}
+
+.text {
+  width: 1037px;
+  margin: 0;
+  font-family: 'Alice';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+}
+
+.treeParagraph {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.continer-text__treeParagraph {
+  display: flex;
+  justify-content: space-between;
+}
+
+.runFromFreddy {
+  width: 604px;
+  height: 649px;
+  padding-top: 10px;
+}
+
+.footer {
+  margin-top:150px;
+}
+
+.footerContiner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+}
+
+.contentCopyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95px;
+}
+
+.copyright {
+  width: 39px;
+  height: 32px;
+}
+
+.year {
+  font-family: 'Alice';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.8824px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.contentTextFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 336px;
+}
+
+.textFooter {
+  margin: 0;
+  font-family: 'Alice';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  text-decoration-line: underline;
+  color: #FF0000;
+}
+
+.arrow {
+  width: 37px;
+  height: 15px;
+}
+
+@media screen and (max-width: 1300px) {}
+*/
