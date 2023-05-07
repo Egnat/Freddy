@@ -351,7 +351,30 @@ continerBackground {
   height: 15px;
 }
 
+/* Responsive */
+
 @media screen and (max-width: 1300px) {}
+
+/* Large: 992px - 1199px 
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}*/
+
+/* Medium: 768px - 991px 
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+}*/
+
+/* Small: 576px - 767px 
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+}*/
 
 @media screen and (max-width: 1024px) {
 .text {font-size: 33px;}
@@ -876,4 +899,7 @@ continerBackground {
 }
  .textFooter {font-size: 27px;}
 
+}
+
+@media screen and (max-width: 320px) {
 }
