@@ -26,7 +26,8 @@ border-radius:10px;
 }
 
 html {
-min-width:1280px;/**/
+min-width:1280px;/*когда первый экран состоит из фото(один блок) и фото с текстом (др.блок)
+и они находятся в общем блоке с дисплеем флекс, то в медиа запросах нужно делать min-width штмлю меньше, как в меди запросах, в этом документе*/
 }
 
 body {
@@ -248,7 +249,7 @@ continerBackground {
   font-family: 'Alice';
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 33px;
   line-height: 44px;
   letter-spacing: 0.07em;
   color: #FFFFFF;
@@ -353,117 +354,526 @@ continerBackground {
 @media screen and (max-width: 1300px) {}
 
 @media screen and (max-width: 1024px) {
-
+.text {font-size: 33px;}
+.common {
+  gap: 161px;
 }
-@media screen and (max-width: 768px) {
-  
+.filterImgDrops {
+  padding-left: 548px;
+  margin-top: -106px;
+  z-index: -1;
 }
-
-@media screen and (max-width: 425px) {
- .filter-img_freddy {
-    display: flex;
-    width: auto;
-    height: auto;
-    overflow: hidden; /*задаём это свойство блоку, в котором находится картинка и увеличиваем картинку до нужных размеров, даже если она становится больше экрана, не нужная часть картинки скрывается*/ 
-  } 
-}
-
-@media screen and (max-width: 375px) {
-  header-continer {width: 375px;}
-  header-continer_content {
-     width: 375px;
+.drop-1 {
+    width: 20px;
+    height: 60px;
   }
-  shadow {display: none;}
-  common {
-    margin-top: 30px;
-    margin-left: -698px;
-  }
-  filter-img_freddy {
-    display: block;
-    width: auto;
-    height: auto;
-    overflow: hidden; /*задаём это свойство блоку, в котором находится картинка и увеличиваем картинку до нужных размеров, даже если она становится больше экрана, не нужная часть картинки скрывается*/ 
-  }
-   img-freddy {
-    width: 773p;
-  }
-  title {
-   padding-left: 338px;
-   font-size: 74px;
-   text-align: center;
-  }
-   filterImgDrops {
-    padding-left: 617px;
-    margin-top: -127px;
+  .drop-2 {
+    width: 20px;
+    height: 60px;
  }
-  drop-1, drop-2 {
-    width: 16px;
-    height: 48px;
+}
+@media screen and (max-width: 800px) {
+ html {min-width: 800px;}
+  .header {min-width: 375p;}
+  .header-continer {min-width: 800px;}
+  .header-continer_content {
+    justify-content: flex-start;
+    width: 375p;
+}
+  .shadow {
+    display: none;
+}
+  .common {
+    position: absolute;
+    left: 358px;
+    margin-top: 50p;
+    margin-left: -663p;
+}
+
+  .block-header_text{
+    padding-right: 39px;
   }
-  filterImgFreddy-2 {display: none;}
-  screenTwo {
-    width: 375px;
-    height: 4730px;
-  }
-  continer-screenTwo { 
-    width: 320px;
-    margin: 0 auto; 
+  .filter-img_freddy {
+    width: auto;
+    height: auto;
+    overflow: hidden; /*задаём это свойство блоку, в котором находится картинка и увеличиваем картинку до нужных размеров, даже если она становится больше экрана, не нужная часть картинки скрывается*/ 
 }
-  subtitle {
-    font-size: 43px;
-    width: 320px;
+  .img-freddy {
+    width:832px;
 }
- firstParagraph {
-  flex-direction: column;
-   lign-items: center;
-}
- freddyTree {
-  width: 350px;
-  margin: 0;
-}
- text {
-    width: 320px;
-    font-size: 26px;
+  .title {
+    padding-left: 243p;
+    font-size: 74px;
     text-align: center;
 }
- twoParagraph {
+  .filterImgDrops {
+    padding-left: 583px;
+    margin-top: -119px;
+    z-index: -1;
+ }
+  .drop-1, .drop-2 {
+    width: 16px;
+    height: 48px;
+}
+  .filterImgFreddy-2 {
+    display: none;
+}
+  .screenTwo {
+    width: 375p;
+    height: 3298px;
+  }
+  .continer-screenTwo { 
+    width: 540px;
+    margin: 0 auto; 
+}
+  .subtitle {
+    font-size: 52px;
+}
+ .firstParagraph {
+  flex-direction: column;
+   align-items: center;
+}
+ .freddyTree {
+  width: 440px;
+  margin: 0;
+}
+ .text {
+    width: 320p;
+    font-size: 30px;
+    text-align: center;
+}
+ .twoParagraph {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+ .freddyFour {
+  width: 440px;
+  argin: 0 auto;
+} 
+ .treeParagraph {
+    lign-items: center;
+}
+ .text2 {
+    width: 320p;
+    font-size: 30px;
+    text-align: center;
+}
+ .continer-text__treeParagraph {
     flex-direction: column;
     align-items: center;
 }
- treeParagraph {
+ .runFromFreddy {
+    width: 538px;
+    height: 512px;
+    padding-top: 25px;
+    argin: 0 auto;
+}
+ .text3 {
+    width: 320p;
+    text-align: center;
+}
+ .blur {
+    width: 375p;
+    height: 3299px;
+    margin-top: -3484px;
+    backdrop-filter: brightness(0.4) grayscale(25%) contrast(2);
+} 
+ .footer {
+    width: 375p;
+    margin-top: 230px;
+}
+ .footerContiner {
+    width: 540px;
+    argin: 0;
+}
+ .footerContiner-content {
+   lex-direction:column-reverse;
+   width: 540px;
+   ext-align: center;
+   gap: 111px;
+}
+ .contentTextFooter {
+  justify-content: space-around;
+  width: 540p;
+}
+ .textFooter {font-size: 30px;}  
+}
+@media screen and (max-width: 768px) {
+ html {min-width: 768px;}
+  .header {min-width: 375p;}
+  .header-continer {min-width: 768px;}
+  .header-continer_content {
+    justify-content: flex-start;
+    width: 375p;
+}
+  .shadow {
+    display: none;
+}
+  .common {
+    position: absolute;
+    left: 343px;
+    margin-top: 50p;
+    margin-left: -663p;
+}
+
+  .block-header_text{
+    padding-right: 39px;
+  }
+  .filter-img_freddy {
+    width: auto;
+    height: auto;
+    overflow: hidden; /*задаём это свойство блоку, в котором находится картинка и увеличиваем картинку до нужных размеров, даже если она становится больше экрана, не нужная часть картинки скрывается*/ 
+}
+  .img-freddy {
+    width:832px;
+}
+  .title {
+    padding-left: 243p;
+    font-size: 74px;
+    text-align: center;
+}
+  .filterImgDrops {
+    padding-left: 583px;
+    margin-top: -119px;
+    z-index: -1;
+ }
+  .drop-1, .drop-2 {
+    width: 16px;
+    height: 48px;
+}
+  .filterImgFreddy-2 {
+    display: none;
+}
+  .screenTwo {
+    width: 375p;
+    height: 3298px;
+  }
+  .continer-screenTwo { 
+    width: 540px;
+    margin: 0 auto; 
+}
+  .subtitle {
+    font-size: 52px;
+}
+ .firstParagraph {
+  flex-direction: column;
+   align-items: center;
+}
+ .freddyTree {
+  width: 440px;
+  margin: 0;
+}
+ .text {
+    width: 320p;
+    font-size: 30px;
+    text-align: center;
+}
+ .twoParagraph {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+ .freddyFour {
+  width: 440px;
+  argin: 0 auto;
+} 
+ .treeParagraph {
     lign-items: center;
 }
- text2 {
+ .text2 {
+    width: 320p;
+    font-size: 30px;
+    text-align: center;
+}
+ .continer-text__treeParagraph {
+    flex-direction: column;
+    align-items: center;
+}
+ .runFromFreddy {
+    width: 538px;
+    height: 512px;
+    padding-top: 25px;
+    argin: 0 auto;
+}
+ .text3 {
+    width: 320p;
+    text-align: center;
+}
+ .blur {
+    width: 375p;
+    height: 3299px;
+    margin-top: -3483px;
+    backdrop-filter: brightness(0.4) grayscale(25%) contrast(2);
+} 
+ .footer {
+    width: 375p;
+    margin-top: 230px;
+}
+ .footerContiner {
+    width: 540px;
+    argin: 0;
+}
+ .footerContiner-content {
+   lex-direction:column-reverse;
+   width: 540px;
+   ext-align: center;
+   gap: 111px;
+}
+ .contentTextFooter {
+  justify-content: space-around;
+  width: 540p;
+}
+ .textFooter {font-size: 30px;} 
+}
+
+@media screen and (max-width: 425px) {
+  html {min-width: 425px;}
+  .header {min-width: 375p;}
+  .header-continer {min-width: 425px;}
+  .header-continer_content {
+    justify-content: flex-start;
+    width: 375p;
+}
+  .shadow {
+    display: none;
+}
+  .common {
+    margin-top: 30px;
+    margin-left: -626px;
+}
+ .block-header_text {
+    padding-right: 0px;
+}
+  .filter-img_freddy {
+    width: auto;
+    height: auto;
+    overflow: hidden; /*задаём это свойство блоку, в котором находится картинка и увеличиваем картинку до нужных размеров, даже если она становится больше экрана, не нужная часть картинки скрывается*/ 
+}
+  .img-freddy {
+    width:863px;
+}
+  .title {
+    padding-left: 325px;
+    font-size: 74px;
+    text-align: center;
+}
+  .filterImgDrops {
+    padding-left: 343px;
+    margin-top: -182px;
+    z-index: -1;
+ }
+  .drop-1, .drop-2 {
+    width: 16px;
+    height: 48px;
+}
+  .filterImgFreddy-2 {
+    display: none;
+}
+  .screenTwo {
+    width: 375p;
+    height: 4730px;
+  }
+  .continer-screenTwo { 
     width: 320px;
+    margin: 0 auto; 
+}
+  .subtitle {
+    font-size: 43px;
+}
+ .firstParagraph {
+  flex-direction: column;
+   align-items: center;
+}
+ .freddyTree {
+  width: 343px;
+  margin: 0 auto;
+}
+ .text {
+    width: 320p;
     font-size: 26px;
     text-align: center;
 }
- continer-text__treeParagraph {
-    flex-direction: column;
+ .twoParagraph {
+    flex-direction: column-reverse;
+    align-items: center;
 }
- runFromFreddy {
-    width: 335px;
-    height: 512px;
+
+ .freddyFour {
+  width: 343px;
+  margin: 0 auto;
+} 
+ .treeParagraph {
+    lign-items: center;
 }
- text3 {
-    width: 320px;
+ .text2 {
+    width: 320p;
+    font-size: 26px;
     text-align: center;
 }
- blur {
+ .continer-text__treeParagraph {
+    flex-direction: column;
+    align-items: center;
+}
+ .runFromFreddy {
+    width: 336px;
+    height: 512px;
+    padding-top: 25px;
+    margin: 0 auto;
+}
+ .text3 {
+    width: 320p;
+    text-align: center;
+}
+ .blur {
     width: 375p;
     height: 4730px;
     margin-top: -4726px;
+    backdrop-filter: brightness(0.6) grayscale(25%) contrast(2);
 } 
- footer {
-    margin-top: 100px;
+ .footer {
+    width: 375p;
+    margin-top: 50px;
 }
- footerContiner {
+ .footerContiner {
     width: 320px;
-    margin: 0;
+    argin: 0;
 }
- footerContiner-content {
-   flex-direction: column;
+ .footerContiner-content {
+   flex-direction:column-reverse;
    width: 320px;
-   text-align: center;
+   ext-align: center;
+   gap: 28px;
+}
+ .contentTextFooter {
+  justify-content: space-around;
+  width: 320px;
+}
+ .textFooter {font-size: 27px;}
+
+}
+
+@media screen and (max-width: 375px) {
+  html {min-width: 375px;}
+  .header {min-width: 375p;}
+  .header-continer {min-width: 375px;}
+  .header-continer_content {
+    justify-content: flex-start;
+    width: 375p;
+}
+  .shadow {
+    display: none;
+}
+  .common {
+    margin-top: 30px;
+    margin-left: -632px;
+}
+ .block-header_text {
+    padding-right: 0px;
+}
+  .filter-img_freddy {
+    width: auto;
+    height: auto;
+    overflow: hidden; /*задаём это свойство блоку, в котором находится картинка и увеличиваем картинку до нужных размеров, даже если она становится больше экрана, не нужная часть картинки скрывается*/ 
+}
+  .img-freddy {
+    width: 738px;
+}
+  .title {
+    padding-left: 290px;
+    font-size: 74px;
+    text-align: center;
+}
+  .filterImgDrops {
+    padding-left: 323px;
+    margin-top: -182px;
+    z-index: -1;
  }
+  .drop-1, .drop-2 {
+    width: 16px;
+    height: 48px;
+}
+  .filterImgFreddy-2 {
+    display: none;
+}
+  .screenTwo {
+    width: 375p;
+    height: 4730px;
+  }
+  .continer-screenTwo { 
+    width: 320px;
+    margin: 0 auto; 
+}
+  .subtitle {
+    font-size: 43px;
+}
+ .firstParagraph {
+  flex-direction: column;
+   align-items: center;
+}
+ .freddyTree {
+  width: 343px;
+  margin: 0 auto;
+}
+ .text {
+    width: 320p;
+    font-size: 26px;
+    text-align: center;
+}
+ .twoParagraph {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+ .freddyFour {
+  width: 343px;
+  margin: 0 auto;
+} 
+ .treeParagraph {
+    lign-items: center;
+}
+ .text2 {
+    width: 320p;
+    font-size: 26px;
+    text-align: center;
+}
+ .continer-text__treeParagraph {
+    flex-direction: column;
+    align-items: center;
+}
+ .runFromFreddy {
+    width: 336px;
+    height: 512px;
+    padding-top: 25px;
+    margin: 0 auto;
+}
+ .text3 {
+    width: 320p;
+    text-align: center;
+}
+ .blur {
+    width: 375px;
+    height: 4730px;
+    margin-top: -4726px;
+    backdrop-filter: brightness(0.6) grayscale(25%) contrast(2);
+} 
+ .footer {
+    width: 375p;
+    margin-top: 50px;
+}
+ .footerContiner {
+    width: 320px;
+    argin: 0;
+}
+ .footerContiner-content {
+   flex-direction:column-reverse;
+   width: 320px;
+   ext-align: center;
+   gap: 28px;
+}
+ .contentTextFooter {
+  justify-content: space-around;
+  width: 320px;
+}
+ .textFooter {font-size: 27px;}
+
 }
