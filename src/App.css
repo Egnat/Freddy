@@ -353,7 +353,12 @@ continerBackground {
 
 /* Responsive */
 
-@media screen and (max-width: 1300px) {}
+@media screen and (max-width: 1300px) {
+  .header-continer_content {
+    justify-content: flex-start;
+    width: 375p;
+}
+}
 
 /* Large: 992px - 1199px 
 @media (max-width: 1199px) {
@@ -363,6 +368,10 @@ continerBackground {
 }*/
 
 @media screen and (max-width: 1024px) {
+  .header-continer_content {
+    justify-content: flex-start;
+    width: 375p;
+}
 .text {font-size: 33px;}
 .common {
   gap: 161px;
