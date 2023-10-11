@@ -183,7 +183,7 @@ ackdrop-filter: blur(7px);
 
 .blur {
   width: 1280p;
-  height: 1801px;
+  height: 1802px;
   margin-top: -1910px;
   webkit-filter: grayscale(50%) contrast(150%) opacity(0.4) brightness(0.7) blur(50px); /*-webkit-эффекты можно комбинировать тонируется все содержимое футера, z-index не помогает для растанировки */
 ox-shadow: inset 1280px 844px rgba(0 0 0 / 70%);
