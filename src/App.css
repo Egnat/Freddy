@@ -3,20 +3,20 @@
 ::-webkit-scrollbar {
 width:.1px;
 height:5px;
-pacity:.02
+pacity:.02;
 }
 
 ::-webkit-scrollbar-button {
 height:50px;
-background:#42e10e
+background:#42e10e;
 }
 
 ::-webkit-scrollbar-track {
-background:#274dd7
+background:#274dd7;
 }
 
 ::-webkit-scrollbar-track-piece {
-background:#e91e63
+background:#e91e63;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -72,9 +72,10 @@ section {margin-top: 140px;}
   ackground-image: /*linear-gradient(45deg, #f8a261, #6e9fc9),*/url(/public/images/Freddy.jpg);
   background-position: center;
   ackground-blend-mode: overlay, color;
-  box-shadow:inset 881px 876px rgb(9 16 255 / 21%);/*настраивает цвет тонировки фото где нужно, сверху, снизу и по бокам*/
+  ox-shadow:inset 881px 876px rgb(9 16 255 / 21%);/*настраивает цвет тонировки фото где нужно, сверху, снизу и по бокам*/
  ilter: drop-shadow(705px 0 0 #ccc); /*рядом с фото делает ппрям-к серого цвета, в данном случае*/
-ackground: linear-gradient(180.12deg,#5883fd 46%,#FFC700 9%);/*настраивает цвет боди где нужно, сверху, снизу и по бокам. background: linear-gradient и background-image не совместимы*/
+ ackground: linear-gradient(180.12deg,#5883fd 46%,#FFC700 9%);/*настраивает цвет боди где нужно, сверху, снизу и по бокам. background: linear-gradient и background-image не совместимы*/
+ ox-shadow: inset 0 100em 0em rgb(0 0 0 / 30%), 0 0 0 2px black,/*внутреннее затемнение боди*/ 0.0em 0.0em 0em rgb(0 0 0 / 0%);
 }
 
 .img-freddy {
@@ -83,6 +84,13 @@ ackground: linear-gradient(180.12deg,#5883fd 46%,#FFC700 9%);/*настраив�
   ackground: linear-gradient(269.67deg, rgba(0, 0, 0, 0.85) -5.74%, rgba(0, 0, 0, 0) 96.99%);
   ox-shadow:inset 881px 876px rgb(9 16 255 / 21%);/*настраивает цвет боди где нужно, сверху, снизу и по бокам*/
   ackground: linear-gradient(180.12deg,#5883fd 46%,#FFC700 9%);
+  ox-shadow: inset 0 100em 0em rgb(0 0 0 / 30%), 0 0 0 2px black,/*внутреннее затемнение боди*/ 0.0em 0.0em 0em rgb(0 0 0 / 0%);
+  ilter: drop-shadow(-159px 0px 16px rgb(0 0 0 / 45%));
+  /*box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, 
+  rgba(240, 46, 170, 0.3) 0px 10px, 
+  rgba(240, 46, 170, 0.2) 0px 15px, 
+  rgba(240, 46, 170, 0.1) 0px 20px, 
+  rgba(240, 46, 170, 0.05) 0px 25px; BUTIFUL SHADOW FOR FOTO*/
 }
 
 /*Можно скопировать с фигмы фото уже с тенью, но для этого фото нужно обернуть во фрейм, чтобы скопировалась фотка
@@ -305,6 +313,7 @@ continerBackground {
   justify-content: space-between;
   align-items: center;
   width: 1200px;
+  margin-bottom: 30px;
 }
 
 .contentCopyright {
@@ -643,6 +652,7 @@ continerBackground {
  .footerContiner-content {
    lex-direction:column-reverse;
    width: 540px;
+   margin-bottom: 30px;
    ext-align: center;
    gap: 111px;
 }
